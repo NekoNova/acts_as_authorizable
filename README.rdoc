@@ -53,10 +53,10 @@ The permission parameter is a black box. It can be anything because ActsAsAuthor
     belongs_to :user
     belongs_to :forum
     belongs_to :role
+
+    scope :with_user, ->(user) { where(user_id: user)}
     
-    named_scope :with_user, lambda { |user| {:conditions => {:user_id => user}}}
-    
-    auth_belongs_to_user :user, :role_association => :role
+    auth_belongs_to_user :user, role_association: :role
   end 
   
   #Forum
