@@ -176,4 +176,5 @@ Into every acts_as_authorizable model one instance method is injected called aut
 You can have circular authorization dependencies. They will not result in infinite loops because the plugin colors the authorization graph while it searches for new permissions. Performance of the plugin is highly dependent on how you use it. Putting the obvious belongs_to_user permissions lexically first will result in better performance. Minimizing the number of auth_parents is also a good way of ensuring higher performance. The queries that result from the authorization plugins work are based on the associations passed. Hence ActiveRecords caching will work just fine as well.
 
 Copyright (c) 2008 Matthew Leventi, released under the MIT license
+
 Copyright (c) 2014 Arne De Herdt, released under the MIT license
