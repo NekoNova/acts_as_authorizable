@@ -18,7 +18,7 @@ This is due to the fact that we don't have explicit information about where the 
 
   gem 'acts_as_authorizable', git: https://github.com/NekoNova/acts_as_authorizable.git
 
-Your going to need Rails 4.1 or greater.
+You're going to need Rails 4.1 or greater.
 
 ==Usage
 
